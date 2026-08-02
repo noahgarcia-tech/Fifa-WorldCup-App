@@ -1,4 +1,6 @@
 @import "./styles/home.css";
+@import "./styles/teams.css";
+
 
 :root {
   --text: #6b6375;
