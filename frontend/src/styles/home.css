@@ -1,0 +1,71 @@
+/* Page container */
+.home {
+  padding: 48px 24px;
+  text-align: center;
+  
+}
+
+/* Title */
+.home-title {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  color: #f3f3f3;
+}
+
+/* Subtitle */
+.home-subtitle {
+  font-size: 20px;
+  color: #6b7280;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+/* Link container */
+.home-links {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-width: 600px;
+  margin: 0 auto;
+  background: black;
+}
+
+/* Base link style */
+.home-link {
+  padding: 14px 20px;
+  border-radius: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: transform 0.15s ease, opacity 0.15s ease;
+  margin: 15px;
+}
+
+/* Hover effect */
+.home-link:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+}
+
+/* Colors */
+.home-link-blue {
+  background: #2563eb;
+}
+
+.home-link-green {
+  background: #16a34a;
+}
+
+.home-link-purple {
+  background: #7c3aed;
+}
+
+.home-link-orange {
+  background: #ea580c;
+}
+
+.home-link-red {
+  background: #dc2626;
+}

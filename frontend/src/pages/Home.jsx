@@ -1,28 +1,31 @@
 import { Link } from "react-router-dom";
 
+
 export default function Home() {
   return (
-    <div className="p-8 text-center">
-      <h1 className="text-3xl font-bold mb-6">World Cup App</h1>
+    <div className="home">
+      <h1 className="home-title">🏆</h1>
 
-      <p className="text-lg mb-8">
+      <h1 className="home-title">2022 World Cup Dashboard</h1>
+
+      <p className="home-subtitle">
         Explore teams, fixtures, standings, players, and top scorers.
       </p>
 
-      <div className="flex flex-col gap-4 max-w-sm mx-auto">
-        <Link to="/teams" className="bg-blue-600 text-white py-3 rounded">
+      <div className="home-links">
+        <Link to="/teams" className="home-link home-link-blue">
           View Teams
         </Link>
-        <Link to="/fixtures" className="bg-green-600 text-white py-3 rounded">
-          View Fixtures
+        <Link to="/fixtures" className="home-link home-link-green">
+          View Matches
         </Link>
-        <Link to="/standings" className="bg-purple-600 text-white py-3 rounded">
+        <Link to="/standings" className="home-link home-link-purple">
           View Standings
         </Link>
-        <Link to="/players" className="bg-orange-600 text-white py-3 rounded">
+        <Link to="/players" className="home-link home-link-orange">
           View Players
         </Link>
-        <Link to="/topscorers" className="bg-red-600 text-white py-3 rounded">
+        <Link to="/topscorers" className="home-link home-link-red">
           View Top Scorers
         </Link>
       </div>
