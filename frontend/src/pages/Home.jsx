@@ -14,21 +14,30 @@ export default function Home() {
       </p>
 
       <div className="home-links">
+        <Link to="/info" className="home-link home-link-grey">
+          World Cup 2022 Info
+        </Link>
+
         <Link to="/teams" className="home-link home-link-blue">
           View Teams
         </Link>
         <Link to="/fixtures" className="home-link home-link-green">
-          View Matches
+          View All Matches
+        </Link>
+         <Link to="/knockoutrounds" className="home-link home-link-yellow">
+          View Knockout Rounds
         </Link>
         <Link to="/standings" className="home-link home-link-purple">
-          View Standings
+          View Group Standings
         </Link>
-        <Link to="/players" className="home-link home-link-orange">
+        {/*<Link to="/players" className="home-link home-link-orange">
           View Players
-        </Link>
+        </Link>*/}
         <Link to="/topscorers" className="home-link home-link-red">
           View Top Scorers
         </Link>
+       
+
       </div>
     </div>
   );

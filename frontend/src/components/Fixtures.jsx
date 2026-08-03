@@ -12,7 +12,7 @@ export default function Fixtures() {
 
   return (
     <div className="page">
-      <h1 className="page-title">Matches</h1>
+      <h1 className="page-title">All Matches</h1>
 
       <div className="grid">
         {fixtures.map(fix => {

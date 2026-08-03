@@ -1,0 +1,70 @@
+.wc2022-page {
+  padding: 20px;
+}
+
+.wc2022-title {
+  font-size: 2.2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 30px;
+
+}
+
+.wc2022-section {
+  margin-bottom: 40px;
+}
+
+.wc2022-heading {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.wc2022-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.wc2022-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  gap: 20px;
+
+  justify-content: center;
+  justify-items: center;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.wc2022-card {
+  width: 260px;
+  min-height: 140px;
+
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.wc2022-card-title {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.wc2022-list {
+  max-width: 900px;
+  margin: 0 auto;
+  padding-left: 20px;
+  line-height: 1.8;
+}

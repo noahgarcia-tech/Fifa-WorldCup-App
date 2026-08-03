@@ -5,6 +5,11 @@ import Fixtures from "./components/Fixtures";
 import Standings from "./components/Standings";
 import Players from "./components/Players";
 import TopScorers from "./components/TopScorers";
+import KnockoutRounds from "./components/KnockoutRounds";
+import Info from "./components/Info";
+
+
+
 
 export default function App() {
   return (
@@ -16,6 +21,9 @@ export default function App() {
         <Route path="/standings" element={<Standings />} />
         <Route path="/players" element={<Players />} />
         <Route path="/topscorers" element={<TopScorers />} />
+        <Route path="/knockoutrounds" element={<KnockoutRounds />} />
+        <Route path="/info" element={<Info />} />
+
     </Routes>
     </BrowserRouter>
   );

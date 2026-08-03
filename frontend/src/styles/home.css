@@ -69,3 +69,11 @@
 .home-link-red {
   background: #dc2626;
 }
+
+.home-link-yellow {
+  background: rgb(212, 212, 19);
+}
+
+.home-link-grey {
+  background: grey;
+}
