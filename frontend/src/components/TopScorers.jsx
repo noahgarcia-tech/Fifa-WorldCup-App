@@ -1,36 +1,45 @@
 import { useEffect, useState } from "react";
+import "../styles/topscorers.css";
+
 
 export default function TopScorers() {
   const [scorers, setScorers] = useState([]);
 
   useEffect(() => {
     fetch("http://127.0.0.1:5000/api/worldcup/topscorers")
-      .then(res => res.json())
-      .then(data => setScorers(data.response));
+      .then((res) => res.json())
+      .then((data) => setScorers(data.response || []));
   }, []);
 
   return (
-    <div className="p-6">
-      <h2 className="text-2xl font-bold mb-6">Top Scorers</h2>
+    <div className="page">
+      <h1 className="page-title">Top Scorers</h1>
 
-      <table className="w-full bg-white shadow rounded">
-        <thead className="bg-gray-200">
-          <tr>
-            <th className="p-2 text-left">Player</th>
-            <th className="p-2">Goals</th>
-            <th className="p-2">Team</th>
-          </tr>
-        </thead>
-        <tbody>
-          {scorers.map(s => (
-            <tr key={s.player.id} className="border-t">
-              <td className="p-2">{s.player.name}</td>
-              <td className="p-2 text-center">{s.statistics[0].goals.total}</td>
-              <td className="p-2 text-center">{s.statistics[0].team.name}</td>
-            </tr>
-          ))}
-        </tbody>
-      </table>
+      <div className="grid">
+        {scorers.map((item, index) => {
+          const player = item.player;
+          const stats = item.statistics[0];
+
+          return (
+            <div key={index} className="card">
+              <img
+                src={player.photo}
+                alt={player.name}
+                className="card-img"
+              />
+
+              <h2 className="card-title">{player.name}</h2>
+
+              <p className="card-subtitle">{stats.team.name}</p>
+
+              <div className="card-info">
+                <p><strong>Goals:</strong> {stats.goals.total}</p>
+                <p><strong>Matches:</strong> {stats.games.appearences}</p>
+              </div>
+            </div>
+          );
+        })}
+      </div>
     </div>
   );
 }

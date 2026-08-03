@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import "../styles/home.css";
 
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
       <h1 className="home-title">2022 World Cup Dashboard</h1>
 
       <p className="home-subtitle">
-        Explore teams, fixtures, standings, players, and top scorers.
+        Explore teams, matches, standings, players, and top scorers.
       </p>
 
       <div className="home-links">

@@ -1,0 +1,73 @@
+.page {
+  padding: 20px;
+}
+
+.page-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+/* Centered grid rows */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+  gap: 20px;
+
+  justify-content: center;
+  justify-items: center;
+
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+
+  width: 260px;      /* consistent width */
+  height: 260px;     /* consistent height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* evenly space content */
+}
+
+
+.fixture-date {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.fixture-teams {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.team-side {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.team-logo {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.team-name {
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+.fixture-score {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin: 0 10px;
+}
